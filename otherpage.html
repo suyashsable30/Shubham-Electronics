@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Shubham Electronics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Other Products</h1>
+        <form id="product-form">
+            <div class="form-group">
+                <label for="product-name">Product Name</label>
+                <input type="text" id="product-name" name="product-name" required>
+            </div>
+            <div class="form-group">
+                <label for="cost">Cost</label>
+                <input type="number" id="cost" name="cost" required>
+            </div>
+            <div class="form-group">
+                <label for="payment-mode">Payment Mode (Online/Cash)</label>
+                <select id="payment-mode" name="payment-mode" required>
+                    <option value="online">Online</option>
+                    <option value="cash">Cash</option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <button class="back-button" onclick="navigateTo('index.html')">Back to Home</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
